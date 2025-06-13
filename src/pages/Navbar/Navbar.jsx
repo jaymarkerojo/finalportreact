@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-sm shadow-md z-50">
+    <header className="uppercase fixed top-0 left-0 w-full bg-black/70 backdrop-blur-sm shadow-md z-50">
       <nav className="flex justify-between items-center px-6 md:px-12 py-4 max-w-7xl mx-auto">
         <h1 className="text-2xl md:text-3xl font-bold text-sky-400">Jaymark</h1>
 
