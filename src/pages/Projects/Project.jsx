@@ -2,53 +2,74 @@ import React from 'react';
 
 const projects = [
   {
-    name: "SAMPLE PROJECT 1",
-    description: "A full-stack app with React front-end and Node.js backend for managing tasks efficiently.",
-    link: "https://github.com/yourusername/project-alpha"
+    name: "Portfolio Website",
+    description: "A responsive portfolio built with React and Tailwind CSS to showcase my projects and skills.",
+    image: "/images/portfolio.png",
+    url: "https://your-portfolio-link.com"
   },
   {
-    name: "SAMPLE PROJECT 2",
-    description: "Responsive e-commerce website built with React and integrated with payment gateway APIs.",
-    link: "https://your-ecommerce-demo.netlify.app"
+    name: "Weather App",
+    description: "A simple weather application using OpenWeatherMap API, built with React and styled-components.",
+    image: "/images/weather-app.png",
+    url: "https://your-weatherapp-link.com"
   },
   {
-    name: "SAMPLE PROJECT 3",
-    description: "This portfolio website built using React and Tailwind CSS showcasing my work.",
-    link: "https://github.com/yourusername/portfolio"
+    name: "Task Tracker",
+    description: "A basic task management app built using React with local storage support.",
+    image: "/images/task-tracker.png",
+    url: "https://your-tasktracker-link.com"
+  },
+    {
+    name: "Portfolio Website",
+    description: "A responsive portfolio built with React and Tailwind CSS to showcase my projects and skills.",
+    image: "/images/portfolio.png",
+    url: "https://your-portfolio-link.com"
+  },
+  {
+    name: "Weather App",
+    description: "A simple weather application using OpenWeatherMap API, built with React and styled-components.",
+    image: "/images/weather-app.png",
+    url: "https://your-weatherapp-link.com"
+  },
+  {
+    name: "Task Tracker",
+    description: "A basic task management app built using React with local storage support.",
+    image: "/images/task-tracker.png",
+    url: "https://your-tasktracker-link.com"
   }
 ];
 
-const Project = () => {
+const Projects = () => {
   return (
     <section
-      className="container min-h-screen mx-auto flex flex-col items-center justify-center py-16 px-6 text-slate-100"
       id="projects"
+      className="bg-slate-900 min-h-screen container mx-auto flex flex-col items-center justify-center px-6 py-16 text-slate-100"
     >
-      <h2 className="text-sky-400 text-4xl font-bold mb-8 text-center">
-        Projects
-      </h2>
+      <div className="max-w-5xl w-full text-center space-y-12">
+        <h2 className="text-4xl font-bold text-sky-400 mb-4">Projects</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
-        {projects.map(({ name, description, link }) => (
-          <div
-            key={name}
-            className="bg-slate-800 rounded-xl shadow-lg p-6 hover:shadow-sky-500/40 transition-all duration-300"
-          >
-            <h3 className="text-xl font-semibold text-sky-300 mb-2">{name}</h3>
-            <p className="text-slate-300 mb-4">{description}</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {projects.map((project, index) => (
             <a
-              href={link}
+              key={index}
+              href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sky-400 hover:underline"
+              className="bg-slate-800 border border-sky-500 rounded-xl p-4 hover:shadow-lg hover:shadow-sky-400/40 transition-all"
             >
-              View Project →
+              <img
+                src={project.image}
+                alt={project.name}
+                className="w-full h-40 object-cover rounded-md mb-4"
+              />
+              <h3 className="text-xl font-semibold text-slate-100">{project.name}</h3>
+              <p className="text-sm text-slate-400 mt-2">{project.description}</p>
             </a>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
 };
 
-export default Project;
+export default Projects;

@@ -3,8 +3,9 @@
       import Skills from "./pages/Skills/Skills"
       import About from "./pages/About/About"
       import FadeInSection from "./components/FadeInSection/FadeInSection"
-      import Project from "./pages/Projects/project"
+      import Project from "./pages/Projects/Project"
       import Contact from "./pages/Contact/Contact"
+      
       function App() {
 
         return (

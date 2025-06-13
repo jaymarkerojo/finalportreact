@@ -4,12 +4,10 @@ const About = () => {
   return (
     <section
       id="about"
-      className="container mx-auto flex flex-col items-center justify-center min-h-screen px-6 py-16 text-slate-100"
+      className="animate-fade-in-up duration-700 container mx-auto flex flex-col items-center justify-center min-h-screen px-6 py-16 text-slate-100"
     >
       <div className="max-w-3xl text-center space-y-6">
-        <h2 className="text-4xl font-bold text-sky-400 mb-4">
-          About Me
-        </h2>
+        <h2 className="text-4xl font-bold text-sky-400 mb-4">About Me</h2>
 
         <p className="text-lg leading-relaxed text-slate-300">
           Hi! I'm <span className="text-sky-400 font-semibold">Jaymark</span>, a Frontend Developer based in <span className="italic">Cebu City</span>. I specialize in crafting clean, responsive, and interactive websites using modern web technologies like <span className="text-sky-300">HTML</span>, <span className="text-sky-300">CSS</span>, <span className="text-sky-300">JavaScript</span>, and <span className="text-sky-300">React</span>.
