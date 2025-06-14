@@ -2,10 +2,10 @@ import React from 'react';
 
 const projects = [
   {
-    name: "Portfolio Website",
+    name: "MOVIE HUB",
     description: "A responsive portfolio built with React and Tailwind CSS to showcase my projects and skills.",
     image: "/images/portfolio.png",
-    url: "https://your-portfolio-link.com"
+    url: "https://movie-github-ht3iwjlt8-jaymarkerojos-projects.vercel.app/"
   },
   {
     name: "Weather App",
